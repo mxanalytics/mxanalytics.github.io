@@ -77,6 +77,9 @@ h2 {
 .hero-content {
   position: relative;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-logo-container {
   background: rgba(49, 103, 141, 1);
@@ -85,7 +88,10 @@ h2 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.6);
   border: 1px solid rgba(255,255,255,0.5);
   backdrop-filter: blur(8px);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 685 / 711;
 }
 .hero-logo {
   max-width: 90%;
@@ -108,7 +114,7 @@ h2 {
 
 .cta-btn {
   display: inline-block;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   background: #ff7c3b;
   color: #fff;
@@ -179,16 +185,29 @@ h2 {
 
 /* Tarjetas colapsables en la sección de servicios */
 details.collapsible-card {
-  background: #f9f9f9;
+  background: #eef6fc;
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 details.collapsible-card summary {
   cursor: pointer;
   font-weight: bold;
   list-style: none;
+  position: relative;
+  padding-right: 1.5rem;
+}
+details.collapsible-card summary::after {
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  transition: transform 0.2s;
+}
+details.collapsible-card[open] summary::after {
+  transform: rotate(180deg);
 }
 details.collapsible-card p {
   margin-top: 0.5rem;
