@@ -221,7 +221,7 @@ h2 {
 @media (min-width: 768px) {
   .nav { width: 20%; }
   .card { width: 80%; }
-  .hero-logo-container { transform: scale(0.90); }
+  .hero-logo-container { transform: scale(1); }
   .hero-logo { max-width: 60%; }
 }
 
