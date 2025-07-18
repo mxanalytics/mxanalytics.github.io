@@ -119,6 +119,7 @@ h2 {
   align-items: center;
   justify-content: center;
   aspect-ratio: 685 / 711;
+  width: min(70vw, 280px);
 }
 .hero-logo {
   max-width: 90%;
