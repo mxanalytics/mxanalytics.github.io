@@ -8,7 +8,7 @@ html {
   --header-height: 64px;
 }
 body {
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
   background: #f2f2f2;
   color: #333;
   line-height: 1.6;
@@ -96,9 +96,12 @@ h2 {
   content: "";
   position: absolute;
   inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+  z-index: 0;
 }
 .hero-content {
   position: relative;
+  z-index: 1;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -126,6 +129,11 @@ h2 {
   color: #fff;
   font-size: 2rem;
   font-weight: 600;
+}
+.tagline {
+  color: #e0e0e0;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .page-title {
@@ -160,6 +168,15 @@ h2 {
 }
 .card p {
   text-align: justify;
+}
+.values-list {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  list-style: disc;
+  color: #333;
+}
+.values-list li {
+  margin: 0.25rem 0;
 }
 .contact-card {
   display: flex;
