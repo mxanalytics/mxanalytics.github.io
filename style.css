@@ -69,7 +69,6 @@ h2 {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(49,103,141,0.6);
 }
 .hero-content {
   position: relative;
