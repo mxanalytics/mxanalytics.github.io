@@ -1,0 +1,17 @@
+{
+  "name": "mxanalytics.github.io",
+  "version": "1.0.0",
+  "description": "MX Analytics - El poder de los datos",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "start": "npx http-server -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
