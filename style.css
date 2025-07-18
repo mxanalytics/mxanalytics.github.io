@@ -98,6 +98,14 @@ h2 {
   font-weight: 600;
 }
 
+.page-title {
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #31678D;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .cta-btn {
   display: inline-block;
   margin-top: 0.5rem;
@@ -165,6 +173,8 @@ h2 {
 @media (min-width: 768px) {
   .nav { width: 40%; }
   .card { width: 80%; }
+  .hero-logo-container { transform: scale(0.75); }
+  .hero-logo { max-width: 60%; }
 }
 
 /* Tarjetas colapsables en la sección de servicios */
