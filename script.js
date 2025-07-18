@@ -13,3 +13,9 @@ document.addEventListener('click', (e) => {
     toggleMenu();
   }
 });
+
+const topBtn = document.querySelector('.top-btn');
+topBtn?.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
