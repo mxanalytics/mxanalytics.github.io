@@ -30,8 +30,18 @@ function Header() {
       <nav className={`nav${open ? ' open' : ''}`} aria-label="Navegación principal">
         <ul>
           <li>
+            <a href="#sobre" onClick={() => setOpen(false)}>
+              Sobre
+            </a>
+          </li>
+          <li>
             <a href="#servicios" onClick={() => setOpen(false)}>
               Servicios
+            </a>
+          </li>
+          <li>
+            <a href="#valores" onClick={() => setOpen(false)}>
+              Valores
             </a>
           </li>
           <li>
@@ -52,6 +62,7 @@ function Hero() {
         <div className="hero-logo-container">
           <img src="Logo_White_Transparente.png" alt="Logotipo de MX Analytics" className="hero-logo" />
         </div>
+        <h1 className="tagline">Inteligencia para decisiones estratégicas</h1>
         <a className="cta-btn" href="#contacto">
           Contáctanos
         </a>
@@ -68,6 +79,11 @@ function About() {
         Somos una consultoría mexicana especializada en transformar datos en conocimiento accionable. Desde
         2023 acompañamos a organizaciones de distintos sectores a impulsar su crecimiento a través de estrategias
         analíticas adaptadas a sus objetivos.
+      </p>
+      <p>
+        Nuestro equipo combina experiencia en ciencia de datos y gestión empresarial para ofrecer soluciones
+        integrales que aumentan la competitividad. Creemos en la innovación constante y en la colaboración
+        cercana con nuestros clientes para entregar resultados medibles.
       </p>
     </section>
   );
@@ -113,6 +129,19 @@ function Services() {
   );
 }
 
+function Values() {
+  return (
+    <section id="valores" className="card scroll-item">
+      <h2>Nuestros valores</h2>
+      <ul className="values-list">
+        <li>Compromiso con la calidad en cada proyecto</li>
+        <li>Confidencialidad absoluta de la información</li>
+        <li>Innovación para ofrecer soluciones de vanguardia</li>
+      </ul>
+    </section>
+  );
+}
+
 function Contact() {
   return (
     <section id="contacto" className="card scroll-item">
@@ -139,6 +168,13 @@ function Contact() {
           <a href="https://www.instagram.com/alfredo.mxanalytics/">@alfredo.mxanalytics</a>
         </span>
       </div>
+      <div className="contact-card">
+        <i className="fa-brands fa-linkedin"></i>
+        <span>
+          LinkedIn:{' '}
+          <a href="https://www.linkedin.com/in/alfredo-mxanalytics/">Alfredo en LinkedIn</a>
+        </span>
+      </div>
     </section>
   );
 }
@@ -146,7 +182,7 @@ function Contact() {
 function Footer() {
   return (
     <footer className="footer scroll-item">
-      <p>&copy; 2023 MX Analytics. Todos los derechos reservados.</p>
+      <p>&copy; 2024 MX Analytics. Todos los derechos reservados.</p>
     </footer>
   );
 }
@@ -178,11 +214,12 @@ function App() {
     <>
       <Header />
       <main>
-        <Hero />
-        <h1 className="page-title scroll-item">Impulsa tu negocio con datos de valor</h1>
-        <About />
-        <Services />
-        <Contact />
+      <Hero />
+      <h1 className="page-title scroll-item">Impulsa tu negocio con datos de valor</h1>
+      <About />
+      <Services />
+      <Values />
+      <Contact />
       </main>
       <Footer />
       <a href="#top" className="btn-floating top-btn" aria-label="Volver arriba">
