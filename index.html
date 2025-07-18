@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MX Analytics - El poder de los datos</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MX Analytics - El poder de los datos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body id="top">
 <header class="header">
   <div class="logo">MX Analytics</div>
   <button class="menu-toggle" aria-label="Menú">
@@ -41,14 +42,30 @@
 
 <section id="contacto" class="card">
   <h2>Contacto</h2>
-  <p>Email: <a href="mailto:alfredo.mxanalytics@gmail.com">alfredo.mxanalytics@gmail.com</a></p>
-  <p>WhatsApp: <a href="https://wa.me/5215618873282">(56) 1887 3282</a></p>
-  <p>Instagram: <a href="https://www.instagram.com/alfredo.mxanalytics/">@alfredo.mxanalytics</a></p>
+  <div class="contact-card">
+    <i class="fa-solid fa-envelope"></i>
+    <span>Email: <a href="mailto:alfredo.mxanalytics@gmail.com">alfredo.mxanalytics@gmail.com</a></span>
+  </div>
+  <div class="contact-card">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>WhatsApp: <a href="https://wa.me/5215618873282?text=Me%20interesan%20los%20servicios%20de%20MX%20Analytics">(56) 1887 3282</a></span>
+  </div>
+  <div class="contact-card">
+    <i class="fa-brands fa-instagram"></i>
+    <span>Instagram: <a href="https://www.instagram.com/alfredo.mxanalytics/">@alfredo.mxanalytics</a></span>
+  </div>
 </section>
 
 <footer class="footer">
   <p>&copy; 2023 MX Analytics. Todos los derechos reservados.</p>
 </footer>
+
+<a href="#top" class="btn-floating top-btn" aria-label="Volver arriba">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+<a href="https://wa.me/5215618873282?text=Me%20interesan%20los%20servicios%20de%20MX%20Analytics" target="_blank" class="btn-floating whatsapp-btn" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 <script src="script.js"></script>
 </body>
