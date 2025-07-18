@@ -70,6 +70,7 @@ h2 {
   height: 100%;
   width: 70%;
   background: #808080;
+  z-index: 1100;
   box-shadow: 2px 0 10px rgba(0,0,0,0.4);
   padding: 2rem 1rem;
   transition: transform 0.5s;
